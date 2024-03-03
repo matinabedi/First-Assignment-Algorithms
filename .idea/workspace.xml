@@ -28,19 +28,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Exercises2.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Mahan/Documents/Java/AP-1402/Second-Assignment-Algorithms",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Exercises2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Test1.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Test2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Test2.romanToIntTest1.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Test3.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Mahan/Documents/Java/AP-1402/Second-Assignment-Algorithms&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="JUnit.Test3">
     <configuration name="Exercises2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Exercises2" />
@@ -67,6 +75,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test2.romanToIntTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Second-Assignment-Algorithms" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Test2" />
+      <option name="METHOD_NAME" value="romanToIntTest1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Second-Assignment-Algorithms" />
       <option name="PACKAGE_NAME" value="" />
@@ -79,8 +97,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.Test3" />
-        <item itemvalue="JUnit.Test1" />
         <item itemvalue="JUnit.Test2" />
+        <item itemvalue="JUnit.Test2.romanToIntTest1" />
+        <item itemvalue="JUnit.Test1" />
         <item itemvalue="Application.Exercises2" />
       </list>
     </recent_temporary>
@@ -94,10 +113,24 @@
       <option name="presentableId" value="Default" />
       <updated>1708492946192</updated>
       <workItem from="1709018888151" duration="15000" />
+      <workItem from="1709018926898" duration="9102000" />
+      <workItem from="1709449273506" duration="1479000" />
+      <workItem from="1709472518716" duration="1100000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Test1.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class Exercises2 {
 
-    /* 
+    /*
     Given an array of integers nums and an integer target, return indices of the two numbers
     such that they add up to target.
 
@@ -14,8 +14,17 @@ public class Exercises2 {
     */
 
     public int[] twoSum(int[] nums, int target) {
-        // TODO
-        return null;
+        int numssize= nums.length;
+        int [] khorogi =new int [2];
+        for (int i=0 ; i<numssize;i++){
+            for(int j=i+1 ; j<numssize; j++){
+                if(nums[i]+nums[j]==target) {
+                    khorogi[0] = i;
+                    khorogi[1] = j;
+                }
+            }
+        }
+        return khorogi;
     }
 
     /*
@@ -49,8 +58,59 @@ public class Exercises2 {
     */
 
     public int romanToInt(String s) {
-        // TODO
-        return 0;
+        int stringsize =s.length();
+        int sum=0;
+        for(int i=0 ; i<stringsize; i++){
+
+            switch (s.charAt(i)) {
+                case 'I':
+                        if (i!=stringsize-1 && s.charAt(i + 1) == 'V') {
+                            sum = sum + 4;
+                            i++;
+                        } else if (i!=stringsize-1 && s.charAt(i + 1) == 'X') {
+                            sum = sum + 9;
+                            i++;
+                        } else sum=sum+1;
+                    break;
+                case 'V':
+                    sum=sum+5;
+                    break;
+                case 'X':
+                    if(i!=stringsize-1) {
+                        if (i!=stringsize-1 && s.charAt(i + 1) == 'L') {
+                            sum = sum + 40;
+                            i++;
+                        } else if (i!=stringsize-1 && s.charAt(i + 1) == 'C') {
+                            sum = sum + 90;
+                            i++;
+                        }
+                    }
+                   else sum=sum+10;
+                    break;
+                case 'L':
+                    sum=sum+50;
+                    break;
+                case 'C':
+                    if(i!=stringsize-1 && i!=stringsize-1) {
+                        if (s.charAt(i + 1) == 'D') {
+                            sum = sum + 400;
+                            i++;
+                        } else if (i!=stringsize-1 && s.charAt(i + 1) == 'M') {
+                            sum = sum + 900;
+                            i++;
+                        }
+                    }
+                   else  sum=sum+100;
+                    break;
+                case 'D':
+                    sum=sum+500;
+                    break;
+                case 'M':
+                    sum=sum+1000;
+                    break;
+            }
+        }
+        return sum;
     }
 
     /*
@@ -59,9 +119,25 @@ public class Exercises2 {
     */
 
     public List<List<Integer>> permute(int[] nums) {
-        // TODO
-        return null;
+        List<List<Integer>> permutations = new ArrayList<>();
+        jaygasht(nums, new ArrayList<>(), permutations);
+        return permutations;
     }
+
+    private void jaygasht(int[] nums, List<Integer> currPermutation, List<List<Integer>> permutations) {
+        if (currPermutation.size() == nums.length) {
+            permutations.add(new ArrayList<>(currPermutation));
+            return;
+        }
+        for (int num : nums) {
+            if (!currPermutation.contains(num)) {
+                currPermutation.add(num);
+                jaygasht(nums, currPermutation, permutations);
+                currPermutation.remove(currPermutation.size() - 1);
+            }
+        }
+    }
+
 
     public static void main(String[] args) {
         // test your code here!
